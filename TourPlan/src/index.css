@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.title{
+  font-size: 3rem;
+  margin: 6vh;
+  border: 7px dashed blue;
+  border-radius: 10px;
+  padding: 1vh 5vw;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cards{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card{
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px solid black;
+}
+.image{
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: ccover;
+
+}
+.tour-info{
+  margin: 20PX 5PX;
+
+}
+.tour-name{
+  font-size: 1rem;
+}
+.tour-price{
+color: #1faa59;
+font-size: 1.3rem;
+}
+.read-more{
+  color: rgb(0, 157, 255);
+  cursor: pointer;
+}
+.not-intrested{
+  /* margin-top: 18px;
+  padding: 10px 80px;
+  border:1px solid red;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color:rgb(244, 96, 96) ; */
+  background-color: rgb(0, 0, 0);
+  padding: 0.8rem 2.3rem;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 2px;
+  text-align: center;
+  width: 180px;
+}
+.not-intrested::before{
+  content: "";
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0),
+    rgb(0, 0, 0)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+  z-index: -1;
+  border-radius: 10px;
+}
+.not-intrested:hover::before{
+  transform: scale(1);
+}
+.refresh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+.refresh-btn{
+  background-color: rgb(213, 154, 154);
+  padding: 0.8rem 2.3rem;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 2px;
+  text-align: center;
+  width: 180px;
+}
+.refresh-btn::before{
+  content: "";
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(247, 246, 246),
+    rgb(20, 91, 92)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+  z-index: -1;
+  border-radius: 10px;
+}
+.refresh-btn:hover::before{
+  transform: scale(1);
+}
